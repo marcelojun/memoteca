@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarPensamentosComponent } from './pensamentos/criar-pensamentos/criar-pensamentos.component';
+import { FormsModule } from '@angular/forms';
+import { ListarPensamentosComponent } from './pensamentos/listar-pensamentos/listar-pensamentos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     RodapeComponent,
-    CriarPensamentosComponent
+    CriarPensamentosComponent,
+    ListarPensamentosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
