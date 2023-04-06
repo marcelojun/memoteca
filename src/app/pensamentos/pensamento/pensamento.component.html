@@ -5,9 +5,9 @@
 <p class="conteudo"><b>{{pensamento.autoria}}</b></p>
 <div class="acoes">
     <button class="botao-editar">
-        <img src="/assets/images/icone-editar.png" alt="Icone editar">
+        <img src="/assets/images/icone-editar.png"  routerLink="pensamentos/editarPensamento/{{pensamento.id}}"  alt="Icone editar">
     </button>
-    <button class="botao-excluir">
+    <button class="botao-excluir" routerLink="pensamentos/excluirPensamento/{{pensamento.id}}">
         <img src="/assets/images/icone-excluir.png" alt="Icone excluir">
     </button>
 </div>
